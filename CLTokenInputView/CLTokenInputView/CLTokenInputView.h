@@ -80,6 +80,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic, nullable) IBInspectable NSString *fieldName;
 /** Color of optional */
 @property (strong, nonatomic, nullable) IBInspectable UIColor *fieldColor;
+/** Font of option */
+@property (strong, nonatomic, nullable) UIFont* fieldFont;
+@property (strong, nonatomic, nullable) UIFont* textFieldFont;
+
 @property (copy, nonatomic, nullable) IBInspectable NSString *placeholderText;
 @property (strong, nonatomic, nullable) UIView *accessoryView;
 @property (assign, nonatomic) IBInspectable UIKeyboardType keyboardType;

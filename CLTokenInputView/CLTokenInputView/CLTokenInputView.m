@@ -518,6 +518,11 @@ static CGFloat const FIELD_MARGIN_X = 4.0; // Note: Same as CLTokenView.PADDING_
     self.fieldLabel.textColor = _fieldColor;
 }
 
+- (void)setFieldFont:(UIFont *)fieldFont {
+    _fieldFont = fieldFont;
+    self.fieldLabel.font = fieldFont;
+}
+
 - (void)setFieldView:(UIView *)fieldView
 {
     if (_fieldView == fieldView) {
@@ -538,6 +543,11 @@ static CGFloat const FIELD_MARGIN_X = 4.0; // Note: Same as CLTokenView.PADDING_
     }
     _placeholderText = placeholderText;
     [self updatePlaceholderTextVisibility];
+}
+
+- (void) setTextFieldFont:(UIFont *)textFieldFont {
+    _textFieldFont = textFieldFont;
+    self.textField.font = textFieldFont;
 }
 
 - (void)setAccessoryView:(UIView *)accessoryView
